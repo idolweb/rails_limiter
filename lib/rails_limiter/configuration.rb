@@ -1,3 +1,5 @@
-class RailsLimiter::Configuration
-  attr_accessor :connexion
+module RailsLimiter
+  class Configuration
+    attr_accessor :connexion
+  end
 end
