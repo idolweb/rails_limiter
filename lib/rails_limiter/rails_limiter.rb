@@ -1,6 +1,6 @@
 require 'active_support/core_ext/object/blank'
 
-module RailsLimiter::Limiter
+module RailsLimiter::RailsLimiter
   def limit(key, max, expire_in, url)
     valid, ttl  = process_limit(key, max, expire_in)
     
@@ -37,6 +37,3 @@ module RailsLimiter::Limiter
     end
   end
 end
-
-require 'rails_limiter/configuration'
-require 'rails_limiter/init'
