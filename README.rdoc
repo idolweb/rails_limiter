@@ -1,0 +1,44 @@
+= RailsLimiter
+
+== Installation
+
+You can install rails_limiter by adding this line in your Gemfile :
+
+  gem 'rails_limiter', :git => 'git://github.com/idolweb/rails_limiter.git'
+
+And then :
+
+  bundle install 
+
+== Configuration
+
+To use this gem, configure RailsLimiter :
+
+  RailsLimiter::Init.configure do |config|
+    config.connexion   = Redis.new
+  end
+
+== Use
+
+In your controller :
+  before_filter :only => action do
+    limit(
+      key,
+      key_max,
+      expires_in,
+      url
+    )
+  end
+
+key         : your custom key
+key_max     : the maximum requests number
+expires_in  : the timeout
+url         : the url where the user will be redirect if it reaches the max resquests
+
+== TODO
+
+- Use any key-value store instead of Redis only.
+
+== Copyright
+
+Copyright (c) 2013 Independent Distribution On Line
