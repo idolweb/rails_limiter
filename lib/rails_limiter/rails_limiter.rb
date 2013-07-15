@@ -5,7 +5,7 @@ module RailsLimiter::RailsLimiter
     valid, ttl  = process_limit(key, max, expire_in)
     
     unless valid
-      flash[:error] = "You exceeded your requests limit of #{max}. Try again in #{ttl}s"
+      flash[:error] = "You exceeded your requests limit of #{max}. Try again in #{ttl} seconds"
       redirect_to url
       return
     end
