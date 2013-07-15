@@ -1,5 +1,7 @@
 = RailsLimiter
 
+{<img src="https://travis-ci.org/idolweb/rails_limiter.png?branch=master" alt="Build Status" />}[https://travis-ci.org/idolweb/rails_limiter]
+
 == Installation
 
 You can install rails_limiter by adding this line in your Gemfile :
