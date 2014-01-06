@@ -11,7 +11,7 @@ class TestControllerTest < ActionController::TestCase
     assert_response :success
     
     get :index
-    assert flash[:error].include?("You exceeded your requests limit of 2. Try again in 60 seconds")
+    assert_match "You exceeded your requests limit of 2. Try again", flash[:error]
     assert_response :redirect
   end
   
