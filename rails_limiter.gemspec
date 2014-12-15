@@ -7,8 +7,8 @@ require "rails_limiter/version"
 Gem::Specification.new do |s|
   s.name        = "rails_limiter"
   s.version     = RailsLimiter::VERSION
-  s.authors     = ["Julien Séveno"]
-  s.email       = ["jseveno@gmail.com"]
+  s.authors     = ["Julien Séveno", "Jean-Philippe Lecaille"]
+  s.email       = ["jseveno@gmail.com", "jplecaille@gmail.com"]
   s.homepage    = "https://github.com/idolweb/rails_limiter"
   s.summary     = "To limit the requests number of a user on an action's controller"
   s.description = "To limit the requests number of a user on an action's controller"
