@@ -1,3 +1,3 @@
 module RailsLimiter
-  VERSION = "0.3.2"
+  VERSION = "0.3.1"
 end

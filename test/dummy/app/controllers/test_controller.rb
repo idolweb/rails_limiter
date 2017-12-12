@@ -1,5 +1,5 @@
 class TestController < ApplicationController
-  before_action :only => :index do
+  before_filter :only => :index do
     limit(
       "extract",
       2,
